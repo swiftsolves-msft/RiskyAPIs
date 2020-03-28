@@ -46,8 +46,8 @@ $confirmednotactionriskyapis = [System.Collections.ArrayList]@()
 #$roleId = "" # Custom - AzureFileSyncOperator
 #$roleId = "" # Custom - SwiftSolvesContributor
 #$roleId = "acdd72a7-3385-48ef-bd42-f606fba81ae7" # BuiltIn - Reader
-$roleId = "b24988ac-6180-42a0-ab88-20f7382dd24c" # BuiltIn - Contributor
-
+#$roleId = "b24988ac-6180-42a0-ab88-20f7382dd24c" # BuiltIn - Contributor
+$roleId = "8e3af657-a8ff-443c-a75c-2fe8c4bcb635" # BuiltIn - Owner
 
 # Future work
 # will pass in param later from trigger of custom roleId
