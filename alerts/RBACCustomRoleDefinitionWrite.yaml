@@ -1,0 +1,24 @@
+id: c9659344-7362-49cc-9438-2c3c64163cf2
+name: RBAC Custom Role Defenition
+description: |
+  'This query looks for new custom role definitions that have been created. 
+   For example this monitors for the operation name 'Microsoft.Authorization/roleDefinitions/write' which is used for creating custom role definitions'
+severity: Informational
+requiredDataConnectors:
+  - connectorId: AzureActivity
+    dataTypes:
+      - AzureActivity
+queryFrequency: 5m
+queryPeriod: 5m
+triggerOperator: gt
+triggerThreshold: 0
+tactics:
+  - PrivilegeEscalation
+relevantTechniques:
+query: |
+ 
+  AzureActivity
+  | where OperationNameValue contains "Microsoft.Authorization/roleDefinitions/write"
+  | where ActivitySubstatusValue == "Created"
+  | where ActivityStatusValue == "Success"
+  | extend timestamp = EventSubmissionTimestamp, AccountCustomEntity = Caller, IPCustomEntity = CallerIpAddress, URLCustomEntity = _ResourceId 

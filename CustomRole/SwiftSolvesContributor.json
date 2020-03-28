@@ -1,0 +1,19 @@
+{
+    "Name":  "SwiftSolvesContributor",
+    "IsCustom":  true,
+    "Description":  "Lets you manage everything except authorizations, and export of MDs or Snaps or generation of SAS or See Keys.",
+    "Actions":  [
+                    "*"
+                ],
+    "NotActions":  [
+                       "Microsoft.Authorization/*/Delete",
+                       "Microsoft.Authorization/*/Write",
+		               "Microsoft.Compute/disks/beginGetAccess/*",
+		               "Microsoft.Compute/snapshots/BeginGetAccess/*",
+                       "Microsoft.Storage/storageAccounts/listKeys/action",
+                       "Microsoft.Storage/storageAccounts/blobServices/generateUserDelegationKey/action"
+                   ],
+    "AssignableScopes":  [
+                             "/subscriptions/YOURSubscriptionID Here/"
+                         ]
+}

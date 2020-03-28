@@ -1,0 +1,54 @@
+{
+  "id": "/subscriptions/YOURSubscriptionID/resourceGroups/Default-ActivityLogAlerts/providers/microsoft.insights/activityLogAlerts/new or edit custom role",
+  "type": "Microsoft.Insights/ActivityLogAlerts",
+  "name": "new or edit custom role",
+  "location": "Global",
+  "kind": null,
+  "tags": {},
+  "properties": {
+    "scopes": [
+      "/subscriptions/YOURSubscriptionID Here/"
+    ],
+    "condition": {
+      "allOf": [
+        {
+          "field": "category",
+          "equals": "Administrative",
+          "containsAny": null,
+          "odata.type": null
+        },
+        {
+          "field": "resourceType",
+          "equals": "Microsoft.Authorization/roleDefinitions",
+          "containsAny": null,
+          "odata.type": null
+        },
+        {
+          "field": "operationName",
+          "equals": "Microsoft.Authorization/roleDefinitions/write",
+          "containsAny": null,
+          "odata.type": null
+        },
+        {
+          "field": "level",
+          "equals": "informational",
+          "containsAny": null,
+          "odata.type": null
+        },
+        {
+          "field": "status",
+          "equals": "succeeded",
+          "containsAny": null,
+          "odata.type": null
+        }
+      ],
+      "odata.type": null
+    },
+    "actions": {
+      "actionGroups": []
+    },
+    "enabled": true,
+    "description": ""
+  },
+  "identity": null
+}

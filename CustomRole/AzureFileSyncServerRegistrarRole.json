@@ -1,0 +1,25 @@
+{
+	"properties": {
+		"roleName": "Azure File Sync Server Registrar Role",
+		"description": "Lets you register and unregister servers in a Sync Group of Azure File Sync.",
+		"assignableScopes": [
+                                "/subscriptions/YOURSubscriptionID Here/"
+                            ],
+		"permissions": [{
+            "actions": ["Microsoft.Authorization/*/read",
+                        "Microsoft.Resources/subscriptions/resourceGroups/read", 
+                        "Microsoft.Resources/deployments/*", 
+                        "Microsoft.Insights/alertRules/*", 
+                        "Microsoft.Support/*", 
+                        "Microsoft.StorageSync/storageSyncServices/registeredServers/write", 
+                        "Microsoft.StorageSync/storageSyncServices/read", 
+                        "Microsoft.StorageSync/storageSyncServices/workflows/read", 
+                        "Microsoft.storagesync/storageSyncServices/workflows/operations/read", 
+                        "Microsoft.storagesync/storageSyncServices/workflows/operationresults/read"
+                    ],
+			"notActions": [],
+			"dataActions": [],
+			"notDataActions": []
+		}]
+	}
+}
