@@ -10,7 +10,8 @@ Longer term goals include:
 * Community driven effort to build .csv or undefined template file you can import that defines risky APIs with some context, classification, and why
 * A documented scenario where triggered alert of a new custom role definition executes script.
 
+Click Image Below to redirect to Azure Security Compass - @MarkSimos
 
-<a href="https%3A%2F%2Fgithub.com%2FMarkSimos%2FMicrosoftSecurity%2Fblob%2Fmaster%2FAzure%20Security%20Compass%201.1%2FAzureSecurityCompassIndex.md" target="_blank">
-    <img src="https://raw.githubusercontent.com/swiftsolves-msft/RiskyAPIs/blob/master/images/customroleguidance.png"/>
+<a href="https://github.com/MarkSimos/MicrosoftSecurity/blob/master/Azure%20Security%20Compass%201.1/AzureSecurityCompassIndex.md" target="_blank">
+    <img src="https://github.com/swiftsolves-msft/RiskyAPIs/blob/master/images/customroleguidance.png"/>
 </a>
