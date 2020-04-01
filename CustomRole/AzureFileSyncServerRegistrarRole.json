@@ -3,7 +3,7 @@
 		"roleName": "Azure File Sync Server Registrar Role",
 		"description": "Lets you register and unregister servers in a Sync Group of Azure File Sync.",
 		"assignableScopes": [
-                                "/subscriptions/YOURSubscriptionID Here/"
+                                "/subscriptions/YOURSubscriptionID Here"
                             ],
 		"permissions": [{
             "actions": ["Microsoft.Authorization/*/read",
