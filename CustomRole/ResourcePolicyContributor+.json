@@ -1,0 +1,24 @@
+{
+	"properties": {
+		"roleName": "Resource Policy Contributor +",
+		"description": "Resource Policy Contributor with additional access to execute Azure Policy Export to GitHub",
+		"assignableScopes": [
+            "/subscriptions/YOURSubscriptionID Here"
+        ],
+		"permissions": [{
+			"actions": [
+                "*/read", 
+                "Microsoft.Authorization/policyassignments/*", 
+                "Microsoft.Authorization/policydefinitions/*", 
+                "Microsoft.Authorization/policyexemptions/*", 
+                "Microsoft.Authorization/policysetdefinitions/*", 
+                "Microsoft.PolicyInsights/*", 
+                "Microsoft.Support/*", 
+                "Microsoft.Authorization/roleAssignments/write"
+            ],
+			"notActions": [],
+			"dataActions": [],
+			"notDataActions": []
+		}]
+	}
+}
